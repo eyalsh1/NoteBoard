@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NoteBoard</title>
+    <link rel="stylesheet" href="NoteBoard.css">
+    <script src="NoteBoard.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+</head>
+
+<body>
+<div><img src="title.png"></div>
+<div id="board">
+    <form>
+        <textarea id="textInput" rows="4" cols="45" placeholder="What's on your mind?"></textarea>
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="input-group">
+                    <span class="input-group-addon">Date:</span>
+                    <input type="date" class="form-control" id="dateInput">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <span class="input-group-addon">Time:</span>
+                    <input type="time" class="form-control" id="timeInput">
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <input type="submit" class="btn btn-info" value="Submit">
+            </div>
+        </div>
+    </form>
+    <div id="msg" style="display:none"></div>
+</div>
+
+<div class="container">
+    <!--<div class="note" style="display:none">
+        <textarea disabled class="noteText" rows="8" cols="19">Hello</textarea>
+        <span class="noteDate">30/12/2016</span>
+        <span class="noteTime">23:45</span>
+        <button type="button" class="glyphicon glyphicon-remove" onclick="deleteRow(this)"></button>
+    </div>-->
+</div>
+
+</body>
+
+</html>

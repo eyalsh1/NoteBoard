@@ -1,0 +1,111 @@
+body {
+    background-image: url("tile.jpg");
+}
+
+img {
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#board {
+    position: relative;
+    width: 670px;
+    height: 245px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url("formbg.jpg");
+}
+
+textarea, button { outline: none; }
+
+#textInput {
+    position: absolute;
+    top: 7%;
+    left: 12%;
+    font-size: 23px;
+    background: transparent;
+    border: none;
+    resize: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.input-group-addon {
+    background-color: rgb(91,192,222) !important;
+    color: white !important;
+}
+.row {
+    position: absolute;
+    top: 73%;
+    margin-right: -50px !important;
+    margin-left: 70px  !important;
+}
+
+#msg {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    border: 2px solid red;
+}
+
+.container {
+    position: relative;
+    /*width: 830px !important;
+    width: 80%;*/
+    height: 540px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.wrapper{
+	position:relative;
+}
+
+.note {
+    position: relative;
+    width: 175px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+    background-image: url("notebg.png");
+    transition: opacity 1.5s ease-in-out;
+    opacity:0;
+}
+
+.noteText {
+    position: absolute;
+    /*rows: 8;
+    cols: 19;*/
+    top: 30px;
+    left: 10px;
+    background: transparent;
+    border: none;
+    resize: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.noteDate {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.noteTime {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.note .glyphicon-remove {
+    top: 21px;
+    left: 141px;
+    opacity:0;
+}
+
+.note:hover > .glyphicon-remove {
+    opacity:1;
+}
